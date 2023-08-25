@@ -7,8 +7,8 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
         cv2.imshow('Frame', frame)
-    if cv2.waitKey(1000) & 0xFF == ord('q'):
-        break
+        if cv2.waitKey(250) & 0xFF == ord('q'):
+            break
     else:
         break
 cap.release()
